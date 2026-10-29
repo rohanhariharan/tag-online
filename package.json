@@ -1,0 +1,22 @@
+{
+  "name": "tag-online",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ad-free, self-hostable online tag. 2-4 players over any network.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "smoke": "node scripts/smoke.js",
+    "test": "node scripts/physics-test.js && node scripts/validate-maps.js",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "ws": "^8.18.0"
+  }
+}
